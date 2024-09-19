@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-carts
+  annotations:
+    github.com/project-slug: gy-org/my-carts
+    backstage.io/kubernetes-label-selector: 'app=my-carts'
+  description: my-carts created
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
+  # dependsOn:
+  #   - resource:crossplane-eks-demo
